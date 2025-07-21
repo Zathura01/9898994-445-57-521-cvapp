@@ -1,0 +1,68 @@
+
+
+<div class="educationPage">
+    <h4>Education History</h4>
+  <div *ngFor="let edu of educationData; let i = index" class="educationClass">
+    <div class="formGrid">
+      <div class="formGroup">
+        <label>Degree</label>
+        <input type="text" [(ngModel)]="edu.degree" placeholder="Degree" />
+      </div>
+      <div class="formGroup">
+        <label>Course</label>
+        <input type="text" [(ngModel)]="edu.course" placeholder="Course" />
+      </div>
+      <div class="formGroup">
+        <label>University</label>
+        <input
+          type="text"
+          [(ngModel)]="edu.university"
+          placeholder="University"
+        />
+      </div>
+      <div class="formGroup">
+        <label>Institute</label>
+        <input
+          type="text"
+          [(ngModel)]="edu.institute"
+          placeholder="Institute"
+        />
+      </div>
+      <div class="formGroup">
+        <label>Start Year</label>
+        <input type="date" [(ngModel)]="edu.start" />
+      </div>
+      <div class="formGroup">
+        <label>End Year</label>
+        <input type="date" [(ngModel)]="edu.end" />
+      </div>
+      <div class="formGroup">
+        <label>Grade</label>
+        <input type="number" [(ngModel)]="edu.grade" placeholder="Grade" />
+      </div>
+      <div class="formGroup">
+        <label>Location</label>
+        <input type="text" [(ngModel)]="edu.location" placeholder="Location" />
+      </div>
+    </div>
+
+    <div class="dialogClass">
+      <textarea
+        [(ngModel)]="edu.misc"
+        placeholder="Additional Notes..."
+      ></textarea>
+      <button type="button" (click)="remove(i)">REMOVE</button>
+    </div>
+  </div>
+  <div class="addNew">
+    <button type="button" (click)="newAdded()">ADD</button>
+  </div>
+</div>
+
+<div class="btnDiv">
+  <button class="resetbtn" (click)="resetData()" type="button">Reset</button>
+<!--   <button class="savebtn" (click)="saveData('education')" type="button">
+    Save
+  </button> -->
+  <button class="nextbtn" (click)="loadNextComponent()" type="button">Save&Next</button>
+</div>

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+.dialogClass {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+   font-family: 'Playfair Display', serif;
+}
+
+.dialogClass button {
+  padding: 4px 10px;
+  background-color: #8b6e4c;
+  color: #fffaf0;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+  width: fit-content;
+}
+
+.dialogClass button:hover {
+  background-color: #6c5336;
+}
+
+.dialogClass textarea {
+  width: 100%;
+  min-height: 50px;
+  padding: 8px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid #c1ac87;
+  background-color: #fffef6;
+  resize: vertical;
+}
+
+.dialogClass textarea:focus {
+  border-color: #a78d5d;
+  background-color: #fffdf0;
+}
+
+.addNew {
+  text-align: center;
+  margin: 1.2rem 0 0.8rem;
+}
+
+.addNew button {
+  background-color: #a67c52;
+  font-weight: bold;
+  color: #fffdf6;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  border: 1px solid #947047;
+}
+
+.addNew button:hover {
+  background-color: #8d6742;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  font-family: 'Georgia', serif;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 100px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.resetbtn {
+  background-color: #8b0000;
+}
+
+.savebtn {
+  background-color: #3e4f7b;
+}
+
+.nextbtn {
+  background-color: #d4af37;
+  color: #3b2e1a;
+  font-weight: bold;
+}
+
+.personalForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: 0rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  
+}

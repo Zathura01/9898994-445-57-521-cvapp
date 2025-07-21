@@ -1,0 +1,31 @@
+<div class="modal-backdrop"></div>
+<div class="templateSelectinClass">
+  <button class="btnClose" (click)="handleTemplateClosing()">Close</button>
+
+  <div class="insideModal">
+    <div *ngIf="showMeEditor === true; else templateBlock">
+      <app-template-editor></app-template-editor>
+    </div>
+
+    <ng-template #templateBlock>
+      <div class="templates">
+        <div class="eachtemplate">
+          <img src="assets/cvone.jpg" alt="logo" />
+          <button (click)="templateSelected(0)">Select</button>
+        </div>
+        <div class="eachtemplate">
+          <img src="assets/cvtwo.jpg" alt="logo" />
+          <button (click)="templateSelected(1)">Select</button>
+        </div>
+        <div class="eachtemplate">
+          <img src="assets/cvthree.jpg" alt="logo" />
+          <button (click)="templateSelected(2)">Select</button>
+        </div>
+        <div class="eachtemplate">
+          <img src="assets/cvfour.jpg" alt="logo" />
+          <button (click)="templateSelected(3)">Select</button>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>

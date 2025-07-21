@@ -1,0 +1,81 @@
+<!-- Projects
+-title
+-role/position
+-techno stack
+-duration
+-description
+-features/achieve
+-url -->
+
+
+
+<div class="educationPage">
+    <h4>Projects and Activities</h4>
+  <div *ngFor="let pro of projectData; let i = index" class="educationClass">
+    <div class="formGrid">
+      <div class="formGroup">
+        <label>Project Title</label>
+        <input type="text" [(ngModel)]="pro.title" placeholder="Ex. Fire dragon" />
+      </div>
+      <div class="formGroup">
+        <label>Your Role</label>
+        <input type="text" [(ngModel)]="pro.role" placeholder="Ex. Dragon flyer" />
+      </div>
+      <div class="formGroup">
+        <label>Technology</label>
+        <input
+          type="text"
+          [(ngModel)]="pro.tech"
+          placeholder="Ex. Wet blankets"
+        />
+      </div>
+      <div class="formGroup">
+        <label>Project duration</label>
+        <input
+          type="text"
+          [(ngModel)]="pro.duration"
+          placeholder="Ex. 3 months"
+        />
+      </div>
+      <div class="formGroup">
+        <label>Project Features</label>
+        <input
+          type="text"
+          [(ngModel)]="pro.features"
+          placeholder="Ex. Breaths fire.."
+        />
+      </div>
+          <div class="formGroup">
+        <label>Url</label>
+        <input
+          type="text"
+          [(ngModel)]="pro.url"
+          placeholder="Ex. no urls"
+        />
+      </div>
+
+
+    <div class="dialogClass">
+      <textarea
+        [(ngModel)]="pro.misc"
+        placeholder="Additional Notes..."
+      ></textarea>
+      <button type="button" (click)="remove(i)">REMOVE</button>
+    </div>
+  </div>
+  </div>
+
+  <div class="addNew">
+    <button type="button" (click)="newAdded()">ADD</button>
+  </div>
+</div>
+
+<div class="btnDiv">
+  <button class="resetbtn" (click)="resetData()" type="button">Reset</button>
+<!--   <button class="savebtn" (click)="saveData('education')" type="button">
+    Save
+  </button> -->
+  <button class="nextbtn" (click)="loadNextComponent()" type="button">
+    Save&Next
+  </button>
+</div>

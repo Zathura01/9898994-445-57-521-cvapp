@@ -1,0 +1,5 @@
+.education{
+    background-color: yellow;
+   display: flex;
+   flex-direction: row;
+}

@@ -1,0 +1,44 @@
+<div class="editorView">
+  <!-- Left Column: Blocks -->
+  <div class="blocks-column">
+    <div
+      class="block"
+      *ngFor="let item of editorView; let i = index"
+      draggable="true"
+      (dragstart)="onDragStart($event, i)"
+      (dragover)="onDragOver($event)"
+      (drop)="onDrop($event, i)"
+    >
+    <button (click)="deleteItem(i)">X</button>
+      {{ item }}
+    </div>
+  </div>
+
+  <!-- Right Column: Entries -->
+  <div class="entries">
+    <input
+      type="text"
+      class="input"
+      placeholder="Applying for..."
+      [(ngModel)]="applyingFor"
+    />
+
+    <label class="upload-label">
+      Upload Image:
+      <input type="file" accept="image/*" (change)="onImageSelected($event)" />
+    </label>
+
+    <img
+      *ngIf="imageIfElse"
+      [src]="imagePreview"
+      alt="Uploaded Image"
+      class="preview-img"
+    />
+
+    <select class="font-select" [(ngModel)]="selectedFont">
+      <option *ngFor="let fn of fonts" [value]="fn">{{ fn }}</option>
+    </select>
+    <button (click)="handleGenerate()" >Generate CV</button>
+  </div>
+</div>
+

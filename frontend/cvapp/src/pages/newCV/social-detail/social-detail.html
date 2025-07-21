@@ -1,0 +1,37 @@
+<div class="educationPage">
+    <h4>Link To Socials</h4>
+  <div *ngFor="let soc of socialData; let i = index" class="educationClass">
+    <div class="formGrid">
+      <div class="formGroup">
+        <input
+          type="text"
+          [(ngModel)]="soc.name"
+          placeholder="LinkedIn"
+        />
+      </div>
+      <div class="formGroup">
+        <input
+          type="text"
+          [(ngModel)]="soc.link"
+          placeholder="https://linkedin.com/myprofile"
+        />
+      </div>
+      <div class="dialogClass">
+        <button type="button" (click)="remove(i)">REMOVE</button>
+      </div>
+    </div>
+  </div>
+  <div class="addNew">
+    <button type="button" (click)="newAdded()">ADD</button>
+  </div>
+</div>
+
+<div class="btnDiv">
+  <button class="resetbtn" (click)="resetData()" type="button">Reset</button>
+  <!--   <button class="savebtn" (click)="saveData('education')" type="button">
+    Save
+  </button> -->
+  <button class="nextbtn" (click)="loadNextComponent()" type="button">
+    Save&Next
+  </button>
+</div>

@@ -1,0 +1,31 @@
+<div class="educationPage">
+    <h4>Interest and Hobbies</h4>
+  <div *ngFor="let inte of interestData; let i = index" class="educationClass">
+    <div class="formGrid">
+      <div class="formGroup">
+        <input
+          type="text"
+          [(ngModel)]="interestData[i]"
+          placeholder="Ex. Killing Mosquitoes"
+        />
+      </div>
+      <div class="dialogClass">
+        <button type="button" (click)="remove(i)">REMOVE</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="addNew">
+    <input
+      type="text"
+      [(ngModel)]="newInterestItem"
+      placeholder="Enter a new interest"
+    />
+    <button type="button" (click)="newAdded()">ADD</button>
+  </div>
+</div>
+
+<div class="btnDiv">
+  <button class="resetbtn" (click)="resetData()" type="button">Reset</button>
+  <button class="nextbtn" (click)="loadNextComponent()" type="button">Save&Next</button>
+</div>

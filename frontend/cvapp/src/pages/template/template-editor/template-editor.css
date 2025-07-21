@@ -1,0 +1,54 @@
+.editorView {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.blocks-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.block {
+  padding: 10px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: grab;
+  transition: all 0.2s;
+}
+
+.block:hover {
+  background-color: #e0e0e0;
+}
+
+.entries {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input, .font-select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.upload-label {
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  margin-top: 10px;
+}

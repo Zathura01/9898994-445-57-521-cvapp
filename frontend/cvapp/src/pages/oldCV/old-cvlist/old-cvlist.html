@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="navbar">
+    <h3>📄 Old CVs</h3>
+    <button class="new-cv-btn" (click)="goToNewCV()">Go To New CV</button>
+  </div>
+
+  <div *ngIf="setData().length > 0; else loading" class="cv-list">
+    <div *ngFor="let rec of setData(); let i = index" class="cv-record">
+      <label class="cv-label">#{{ i + 1 }} — {{ rec.cvName }}</label>
+      <div class="btns">
+      <button class="open-btn" (click)="clickToOpen(i)">Open</button>
+      <button class="delete-btn" (click)="clickToDelete(rec._id, i)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #loading>
+    <div class="loading">
+      <p>Loading CVs...</p>
+      <pre class="debug">{{ setData() | json }}</pre>
+    </div>
+  </ng-template>
+</div>

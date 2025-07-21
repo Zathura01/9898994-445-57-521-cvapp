@@ -1,0 +1,35 @@
+
+
+
+
+<div class="educationPage">
+    <h4>Expertise Details</h4>
+  <div *ngFor="let skil of skillData; let i = index" class="educationClass">
+    <div class="formGrid">
+      <div class="formGroup">
+        <label>Expertise</label>
+        <input type="text" [(ngModel)]="skil.skill" placeholder="Ex. Mosquito killer" />
+      </div>
+    <div class="dialogClass">
+      <textarea
+        [(ngModel)]="skil.misc"
+        placeholder="Additional Notes..."
+      ></textarea>
+      <button type="button" (click)="remove(i)">REMOVE</button>
+    </div>
+  </div>
+  </div>
+  <div class="addNew">
+    <button type="button" (click)="newAdded()">ADD</button>
+  </div>
+</div>
+
+<div class="btnDiv">
+  <button class="resetbtn" (click)="resetData()" type="button">Reset</button>
+<!--   <button class="savebtn" (click)="saveData('education')" type="button">
+    Save
+  </button> -->
+  <button class="nextbtn" (click)="loadNextComponent()" type="button">
+    Save&Next
+  </button>
+</div>

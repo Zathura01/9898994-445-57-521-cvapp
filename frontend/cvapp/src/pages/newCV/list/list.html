@@ -1,0 +1,15 @@
+<div class="btnList">
+    <button (click)="listSelection('personal')" >Personal</button>
+    <button (click)="listSelection('education')" >Education</button>
+    <button (click)="listSelection('work')" >Work</button>
+    <button (click)="listSelection('skill')" >Skill</button>
+    <button (click)="listSelection('summary')" >Summary</button>
+    <button (click)="listSelection('interest')" >Interest</button>
+    <button (click)="listSelection('project')" >Project</button>
+    <button (click)="listSelection('award')" >Awards and Certificates</button>
+    <button (click)="listSelection('social')" >Socials</button>
+    <input type="text" placeholder="CV Name" [(ngModel)]="cvName" (ngModelChange)="handleChange()" />
+    <button (click)="submitForward()" >Proceed</button>
+    <button (click)="goToAbout()">Old CVs</button>
+
+</div>

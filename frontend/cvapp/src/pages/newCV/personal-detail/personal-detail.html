@@ -1,0 +1,59 @@
+<div class="personalForm">
+    
+  <form>
+    <h4>Basic Details</h4>
+    <input
+      type="text"
+      placeholder="First Name"
+      [(ngModel)]="personalData.firstName"
+      name="firstName"
+    />
+    <input
+      type="text"
+      placeholder="Middle Name"
+      [(ngModel)]="personalData.middleName"
+      name="middleName"
+    />
+    <input
+      type="text"
+      placeholder="Last Name"
+      [(ngModel)]="personalData.lastName"
+      name="lastName"
+    />
+    <input
+      type="number"
+      placeholder="Age"
+      [(ngModel)]="personalData.age"
+      name="age"
+    />
+    <input
+      type="text"
+      placeholder="Nationality"
+      [(ngModel)]="personalData.nationality"
+      name="nationality"
+    />
+    <input
+      type="email"
+      placeholder="Email"
+      [(ngModel)]="personalData.email"
+      name="email"
+    />
+    <input
+      type="text"
+      placeholder="Location"
+      [(ngModel)]="personalData.location"
+      name="location"
+    />
+    <input
+      type="number"
+      placeholder="Contact Number"
+      [(ngModel)]="personalData.contact"
+      name="contact"
+    />
+    <div class="btnDiv">
+    <button class="resetbtn" (click)="resetData('personal')" type="button">Reset</button>    
+    <button class="savebtn" (click)="saveData('personal')" type="button">Save</button>
+    <button class="nextbtn" (click)="loadNextComponent('education')" type="button">Save&Next</button>
+    </div>  
+</form>
+</div>

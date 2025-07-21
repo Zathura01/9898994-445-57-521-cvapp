@@ -1,0 +1,55 @@
+
+<!-- /* -job title
+-company name
+-location
+-start, end month,year
+-key responsibility */ -->
+
+<div class="educationPage">
+    <h4>Work History</h4>
+  <div *ngFor="let wrk of workData; let i = index" class="educationClass">
+    <div class="formGrid">
+      <div class="formGroup">
+        <label>Job Title</label>
+        <input type="text" [(ngModel)]="wrk.jobTitle" placeholder="Ex. CEO" />
+      </div>
+      <div class="formGroup">
+        <label>Company Name</label>
+        <input type="text" [(ngModel)]="wrk.companyName" placeholder="Ex. Willington" />
+      </div>
+      <div class="formGroup">
+        <label>Start Year</label>
+        <input type="date" [(ngModel)]="wrk.start" />
+      </div>
+      <div class="formGroup">
+        <label>End Year</label>
+        <input type="date" [(ngModel)]="wrk.end" />
+      </div>
+      <div class="formGroup">
+        <label>Location</label>
+        <input type="text" [(ngModel)]="wrk.location" placeholder="Location" />
+      </div>
+    </div>
+
+    <div class="dialogClass">
+      <textarea
+        [(ngModel)]="wrk.misc"
+        placeholder="Additional Notes..."
+      ></textarea>
+      <button type="button" (click)="remove(i)">REMOVE</button>
+    </div>
+  </div>
+  <div class="addNew">
+    <button type="button" (click)="newAdded()">ADD</button>
+  </div>
+</div>
+
+<div class="btnDiv">
+  <button class="resetbtn" (click)="resetData()" type="button">Reset</button>
+<!--   <button class="savebtn" (click)="saveData('education')" type="button">
+    Save
+  </button> -->
+  <button class="nextbtn" (click)="loadNextComponent()" type="button">
+    Save&Next
+  </button>
+</div>

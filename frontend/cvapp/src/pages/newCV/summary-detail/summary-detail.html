@@ -1,0 +1,16 @@
+<div class="personalForm">
+   <h4>Summary</h4>
+    <div class="dialogClass">
+      <textarea
+        [(ngModel)]="summaryData"
+        placeholder="Additional Notes..."
+      ></textarea>
+    </div>
+
+    <div class="btnDiv">
+    <button class="resetbtn" (click)="resetData('personal')" type="button">Reset</button>    
+    <button class="savebtn" (click)="saveData('personal')" type="button">Save</button>
+    <button class="nextbtn" (click)="loadNextComponent('education')" type="button">Save&Next</button>
+    </div>  
+
+</div>

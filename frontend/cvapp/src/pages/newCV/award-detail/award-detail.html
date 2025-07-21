@@ -1,0 +1,58 @@
+
+<!-- /* awards and certificates
+-title
+-issuer
+-date
+-crediti id/url
+-description */ -->
+
+
+<div class="educationPage">
+ <h4>Awards and Certificates</h4>
+  <div *ngFor="let avn of awardData; let i = index" class="educationClass">
+    <div class="formGrid">
+      <div class="formGroup">
+        <label>Title</label>
+        <input type="text" [(ngModel)]="avn.title" placeholder="Degree" />
+      </div>
+      <div class="formGroup">
+        <label>Isser</label>
+        <input type="text" [(ngModel)]="avn.issuer" placeholder="Course" />
+      </div>
+      <div class="formGroup">
+        <label>Credential</label>
+        <input
+          type="text"
+          [(ngModel)]="avn.credential"
+          placeholder="University"
+        />
+      </div>
+
+      <div class="formGroup">
+        <label>Date</label>
+        <input type="date" [(ngModel)]="avn.date" />
+      </div>
+    </div>
+
+    <div class="dialogClass">
+      <textarea
+        [(ngModel)]="avn.misc"
+        placeholder="Additional Notes..."
+      ></textarea>
+      <button type="button" (click)="remove(i)">REMOVE</button>
+    </div>
+  </div>
+  <div class="addNew">
+    <button type="button" (click)="newAdded()">ADD</button>
+  </div>
+</div>
+
+<div class="btnDiv">
+  <button class="resetbtn" (click)="resetData()" type="button">Reset</button>
+<!--   <button class="savebtn" (click)="saveData('education')" type="button">
+    Save
+  </button> -->
+  <button class="nextbtn" (click)="loadNextComponent()" type="button">
+    Save&Next
+  </button>
+</div>

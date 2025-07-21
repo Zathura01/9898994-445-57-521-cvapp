@@ -1,0 +1,23 @@
+<div *ngIf="templateFlag()">
+
+<app-template-selection></app-template-selection>
+</div>
+
+<div class="newCv">
+  <div class="list">
+    <app-list (selectedFromList)="onSelectedFromList($event)" />
+  </div>
+  <div class="entries" [ngSwitch]="formToShow">
+    <app-personal-detail *ngSwitchCase="'personal'" (personalRedirect)="onSelectedFromList('education')" />
+    <app-education-detail *ngSwitchCase="'education'" (educationRedirect)="onSelectedFromList('work')" />
+    <app-work-detail *ngSwitchCase="'work'" (workRedirect)="onSelectedFromList('skill')" />
+    <app-skill-detail *ngSwitchCase="'skill'" (skillRedirect)="onSelectedFromList('summary')" />
+    <app-summary-detail *ngSwitchCase="'summary'" (summaryRedirect)="onSelectedFromList('interest')" />
+    <app-interest-detail *ngSwitchCase="'interest'" (interestRedirect)="onSelectedFromList('project')" />
+    <app-award-detail *ngSwitchCase="'award'" (awardRedirect)="onSelectedFromList('social')" />
+    <app-project-detail *ngSwitchCase="'project'" (projectRedirect)="onSelectedFromList('award')" />
+    <app-social-detail *ngSwitchCase="'social'" (socialRedirect)="onSelectedFromList('personal')" />
+    <!-- Add more cases as needed -->
+    <div *ngSwitchDefault>Select a section from the list</div>
+  </div>
+</div>

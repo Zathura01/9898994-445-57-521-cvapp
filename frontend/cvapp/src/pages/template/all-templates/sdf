@@ -1,0 +1,17 @@
+for (const key in obj) {
+  const value = obj[key];
+
+  if (Array.isArray(value)) {
+    console.log(`${key} is an array:`);
+    value.forEach(item => console.log(' -', item));
+  
+  } else if (typeof value === 'object') {
+    console.log(`${key} is an object:`);
+    for (const subKey in value) {
+      console.log(` - ${subKey}: ${value[subKey]}`);
+    }
+  
+  } else {
+    console.log(`${key}: ${value}`);
+  }
+}

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.educationPage {
+  padding: 1.5rem;
+  background: #fdf8ef;
+  border: 2px solid #d4c19c;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 2rem auto;
+  font-family: 'Playfair Display', serif;
+  color: #3e2f1c;
+  box-shadow: 0 0 12px rgba(139, 117, 75, 0.3);
+}
+
+.educationClass {
+  background-color: #fffdf6;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #c5b28e;
+  border-radius: 8px;
+  box-shadow: inset 0 0 5px rgba(211, 185, 133, 0.3);
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #4b3a28;
+}
+
+.formGroup input {
+  padding: 6px 10px;
+  border: 1px solid #b6a179;
+  border-radius: 6px;
+  font-size: 13px;
+  background-color: #fffef8;
+}
+
+.formGroup input:focus {
+  border-color: #a78d5d;
+  outline: none;
+  background-color: #fffdf2;
+}
+
+.dialogClass {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.dialogClass button {
+  padding: 4px 10px;
+  background-color: #8b6e4c;
+  color: #fffaf0;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+  width: fit-content;
+}
+
+.dialogClass button:hover {
+  background-color: #6c5336;
+}
+
+.dialogClass textarea {
+  width: 100%;
+  min-height: 50px;
+  padding: 8px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid #c1ac87;
+  background-color: #fffef6;
+  resize: vertical;
+}
+
+.dialogClass textarea:focus {
+  border-color: #a78d5d;
+  background-color: #fffdf0;
+}
+
+.addNew {
+  text-align: center;
+  margin: 1.2rem 0 0.8rem;
+}
+
+.addNew button {
+  background-color: #a67c52;
+  font-weight: bold;
+  color: #fffdf6;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  border: 1px solid #947047;
+}
+
+.addNew button:hover {
+  background-color: #8d6742;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 0.95rem;
+  font-family: 'Georgia', serif;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 100px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.resetbtn {
+  background-color: #8b0000;
+}
+
+.savebtn {
+  background-color: #3e4f7b;
+}
+
+.nextbtn {
+  background-color: #d4af37;
+  color: #3b2e1a;
+  font-weight: bold;
+}
