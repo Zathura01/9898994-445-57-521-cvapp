@@ -1,0 +1,135 @@
+{
+  applyingFor: 'asdfsf',
+  image: null,
+  project: [
+    {
+      title: 'afds',
+      role: 'asdf',
+      tech: [Array],
+      duration: '',
+      features: '',
+      url: '',
+      misc: '',
+      _id: new ObjectId('687ce213ff6c684545c31b46')
+    },
+    {
+      title: 'asdfsdf',
+      role: 'sfsdfasfsf',
+      tech: [Array],
+      duration: '',
+      features: '',
+      url: '',
+      misc: '',
+      _id: new ObjectId('687ce213ff6c684545c31b47')
+    }
+  ],
+  education: [
+    {
+      degree: 'asdfsf',
+      course: 'asfsf',
+      university: '',
+      institute: '',
+      start: null,
+      end: null,
+      grade: '',
+      location: '',
+      misc: 'asf',
+      _id: new ObjectId('687ce213ff6c684545c31b44')
+    }
+  ],
+  work: [
+    {
+      jobTitle: 'ass',
+      companyName: 'saaaa',
+      location: '',
+      start: null,
+      end: null,
+      misc: 'safd',
+      _id: new ObjectId('687ce213ff6c684545c31b45')
+    }
+  ],
+  skill: [
+    {
+      skill: 'asf',
+      misc: 'asf',
+      _id: new ObjectId('687ce213ff6c684545c31b48')
+    }
+  ],
+  personal: {
+    firstName: 'adafsdf',
+    middleName: 'sdfsdf',
+    lastName: 'asfdsf',
+    age: 18,
+    nationality: '',
+    contact: null,
+    email: '',
+    location: '',
+    _id: new ObjectId('687ce213ff6c684545c31b43')
+  },
+  award: [],
+  social: []
+} 
+
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+{
+  applyingFor: 'SDFSAF',
+  image: null,
+  personal: {
+    firstName: 'ASDFS',
+    middleName: 'ASFAS',
+    lastName: 'AAAA',
+    age: 18,
+    nationality: 'ADF',
+    contact: 23233223,
+    email: 'ASF',
+    location: 'SDF',
+    _id: new ObjectId('687cf9eab8fad9fd55a18df0')
+  },
+  summary: 'ASFSDFASF',
+  project: [
+    {
+      title: 'ASF',
+      role: 'SDF',
+      tech: [Array],
+      duration: '',
+      features: '',
+      url: '',
+      misc: '',
+      _id: new ObjectId('687cf9eab8fad9fd55a18df4')
+    }
+  ],
+  skill: [
+    {
+      skill: 'ASDF',
+      misc: '',
+      _id: new ObjectId('687cf9eab8fad9fd55a18df3')
+    }
+  ],
+  education: [
+    {
+      degree: 'ASF',
+      course: 'ASDF',
+      university: 'ASDF',
+      institute: '',
+      start: null,
+      end: null,
+      grade: '',
+      location: '',
+      misc: 'ASDF',
+      _id: new ObjectId('687cf9eab8fad9fd55a18df1')
+    }
+  ],
+  interest: [ 'SAF', 'ASDF' ],
+  work: [
+    {
+      jobTitle: 'ASF',
+      companyName: 'ASDF',
+      location: '',
+      start: 2025-07-02T00:00:00.000Z,
+      end: null,
+      misc: 'SFA',
+      _id: new ObjectId('687cf9eab8fad9fd55a18df2')
+    }
+  ],
+  award: []
+}  this is pdfdata
